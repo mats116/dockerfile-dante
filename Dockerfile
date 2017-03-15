@@ -7,4 +7,6 @@ RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing" >> /etc/apk/reposit
 
 ADD sockd.conf /etc/sockd.conf
 
+EXPOSE 1080
+
 ENTRYPOINT ["/usr/sbin/sockd"]
